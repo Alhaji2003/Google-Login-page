@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.box {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.form {
+
+    width: 400px;
+    min-height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 5px;
+    padding: 20px;
+    user-select: none;
+}
+
+/* header style */
+img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 80px;
+    display: block;
+    margin: auto;
+}
+
+.form-title {
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 20px;
+
+}
+
+/* Input box style */
+.form-group {
+
+    height: 48px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control {
+
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    background: none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.form-label {
+    color: gainsboro;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    padding: 0 6px;
+    font-size: 14px;
+    transition: .1s;
+    background-color: white;
+}
+
+.form-control:focus+.form-label {
+    top: -8px;
+    z-index: 10;
+    color: blue;
+    font-weight: 400px;
+}
+
+.form-control:focus {
+    border: 1px solid blue;
+
+}
+
+.form-control:not(:focus):valid+label {
+
+    top: -8px;
+    z-index: 10;
+}
+
+/* Show password word style */
+
+.showlabel {
+    font-size: 14px;
+}
+
+/* Bottom box side */
+.bottom-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.bottom-box a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1b66c9;
+}
+
+.bottom-box button {
+    display: block;
+    padding: 12px 32px;
+    border: none;
+    background-color: #1b66c9;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+    }
+
+
+}
+@media (max-width:768px)
+{
+   
+    .form{
+        width: 95%;
+      
+        
+    }
+    
+}
